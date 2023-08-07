@@ -127,7 +127,7 @@ body{
 
 @media (max-width: 800px){
   .body-inner-div{
-        margin-left: -20px;
+    margin-left: -20px;
    }
 
    #logo{
@@ -137,4 +137,12 @@ body{
    .perfil-primeira-linha{
         margin-top: 240px;
    }
+
+   .perfil-segunda-linha{
+        margin-top: -100px;
+    }
+
+    .perfil-terceira-linha{
+        margin-top: -100px;
+    }
 }
