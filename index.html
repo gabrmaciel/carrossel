@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <img id="logo" src="img/carrossel-completo.png" alt="">
+    <div id="perfil">
+        <div class="body-inner-div">
+            <div class="perfil-primeira-linha">
+                <div class="perfil-rosto perfil-rosto-primeiro perfil-adriano" style="background-image:url('icon_antigo/adriano-ramos.png')"></div>
+                <div class="perfil-rosto perfil-rosto-primeiro perfil-davi" style="background-image:url('icon_antigo/davi-rabinovich.png')"></div>
+                <div class="perfil-rosto perfil-rosto-primeiro perfil-jaime" style="background-image:url('icon_antigo/jaime-palilo.png')"></div>
+                <div class="perfil-rosto perfil-rosto-primeiro perfil-jorge" style="background-image:url('icon_antigo/jorge-cavalieri.png')"></div>
+                <div class="perfil-rosto perfil-rosto-primeiro perfil-mario" style="background-image:url('icon_antigo/mario-ayala.png')"></div>
+                <div class="perfil-rosto perfil-rosto-primeiro perfil-paulo" style="background-image:url('icon_antigo/paulo-guerra.png')"></div>
+            </div>
+            <div class="perfil-segunda-linha">
+                <div class="perfil-rosto perfil-rosto-segundo perfil-alicia" style="background-image:url('icon_antigo/alicia-gusman.png')"></div>
+                <div class="perfil-rosto perfil-rosto-segundo perfil-cirilo" style="background-image:url('icon_antigo/cirilo-rivera.png')"></div>
+                <div class="perfil-rosto perfil-rosto-segundo perfil-maria" style="background-image:url('icon_antigo/maria-joaquina.png')"></div>
+                <div class="perfil-rosto perfil-rosto-segundo perfil-daniel" style="background-image:url('icon_antigo/daniel-zapata.png')"></div>
+                <div class="perfil-rosto perfil-rosto-segundo perfil-kokimoto" style="background-image:url('icon_antigo/kokimoto-mishima.png')"></div>
+            </div>
+            <div class="perfil-terceira-linha">
+                <div class="perfil-rosto perfil-rosto-terceiro perfil-alicia" style="background-image:url('icon_antigo/bibi-smith.png')"></div>
+                <div class="perfil-rosto perfil-rosto-terceiro perfil-cirilo" style="background-image:url('icon_antigo/carmen-carrilho.png')"></div>
+                <div class="perfil-rosto perfil-rosto-terceiro perfil-maria" style="background-image:url('icon_antigo/laura-gianolli.png')"></div>
+                <div class="perfil-rosto perfil-rosto-terceiro perfil-daniel" style="background-image:url('icon_antigo/marcelina-guerra.png')"></div>
+                <div class="perfil-rosto perfil-rosto-terceiro perfil-kokimoto" style="background-image:url('icon_antigo/valeria-ferreira.png')"></div>
+            </div>
+        </div>
+    </div>
+    <div id="EsperaCargando">
+        <div class="perfil-rosto" style="background-image:url('icon_antigo/adriano-ramos-red.png')"></div>
+        <div class="perfil-rosto" style="background-image:url('icon_antigo/davi-rabinovich-red.png')"></div>
+        <div class="perfil-rosto" style="background-image:url('icon_antigo/jaime-palilo-red.png')"></div>
+        <div class="perfil-rosto" style="background-image:url('icon_antigo/jorge-cavalieri-red.png')"></div>
+        <div class="perfil-rosto" style="background-image:url('icon_antigo/mario-ayala-red.png')"></div>
+        <div class="perfil-rosto" style="background-image:url('icon_antigo/paulo-guerra-red.png')"></div>
+        <div class="perfil-rosto" style="background-image:url('icon_antigo/alicia-gusman-red.png')"></div>
+        <div class="perfil-rosto" style="background-image:url('icon_antigo/cirilo-rivera-red.png')"></div>
+        <div class="perfil-rosto" style="background-image:url('icon_antigo/maria-joaquina-red.png')"></div>
+        <div class="perfil-rosto" style="background-image:url('icon_antigo/daniel-zapata-red.png')"></div>
+        <div class="perfil-rosto" style="background-image:url('icon_antigo/kokimoto-mishima-red.png')"></div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#logo").css("transform", "rotate(0deg) scale(0.8)");
+            setTimeout(carrosselEsconde, 2000);
+
+            function carrosselEsconde(){
+                $("#logo").css("top", "-20%")
+                $("#logo").css("transform", "scale(0.6)")
+                setTimeout(perfilPrimeiraLinha, 1600);
+                setTimeout(perfilSegundaLinha, 2800);
+                setTimeout(perfilTerceiraLinha, 3400);
+            }
+
+            function perfilPrimeiraLinha(){
+                $(".perfil-primeira-linha").css("opacity", "1")
+                $(".perfil-rosto-primeiro").css("transform", "rotate(0deg) scale(0.8)")
+                setTimeout(perfilPrimeiraLinhaTransitionZero, 500);
+            }
+
+            function perfilPrimeiraLinhaTransitionZero(){
+                $(".perfil-rosto-primeiro").css("transition", "0s")
+            }
+
+            function perfilSegundaLinha(){
+                $(".perfil-segunda-linha").css("opacity", "1")
+                $(".perfil-rosto-segundo").css("transform", "rotate(0deg) scale(0.8)")
+                setTimeout(perfilSegundaLinhaTransitionZero, 500);
+            }
+
+            function perfilSegundaLinhaTransitionZero(){
+                $(".perfil-rosto-segundo").css("transition", "0s")
+            }
+
+            function perfilTerceiraLinha(){
+                $(".perfil-terceira-linha").css("opacity", "1")
+                $(".perfil-rosto-terceiro").css("transform", "rotate(0deg) scale(0.8)")
+                setTimeout(perfilTerceiraLinhaTransitionZero, 500);
+            }
+
+            function perfilTerceiraLinhaTransitionZero(){
+                $(".perfil-rosto-terceiro").css("transition", "0s")
+            }
+
+            // $(".perfil-rosto").hover(function(){
+
+            //     var perfil_rosto = $(this).css('background-image');
+            //     perfil_rosto = perfil_rosto.split("/");
+            //     perfil_rosto = perfil_rosto.slice(-1)[0];
+            //     perfil_rosto = perfil_rosto.slice(0,-2);
+            //     perfil_rosto = perfil_rosto.split(".");
+            //     $(this).css('background-image', 'url(icon_antigo/'+perfil_rosto[0]+'-red.'+perfil_rosto[1]+')');
+            //     }, function(){
+            //     $(this).css('background-image', 'url(icon_antigo/'+perfil_rosto[0]+'.'+perfil_rosto[1]+')');
+            // });
+        });
+    </script>
+</body>
+</html>

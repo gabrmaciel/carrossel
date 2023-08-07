@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.body-inner-div{
+    float: none;
+    width: 100%;
+    height: 100%;
+    max-width: 1220px;
+    margin: auto;
+    text-align: left;
+    padding: 0px 20px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #00adff, #020294);
+}
+
+#logo{
+    position: relative;
+    top: 0;
+    z-index: 2;
+    transform: rotate(270deg) scale(1.2);
+    transition: 2s
+}
+
+#perfil{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.perfil-rosto{
+    float: left;
+    width: 150px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: rotate(1080deg) scale(0.1);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.perfil-primeira-linha{
+    float: left;
+    width: 100%;
+    margin-top: 260px;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s;
+    transform: scale(0.8);
+}
+
+.perfil-segunda-linha{
+    float: left;
+    width: 100%;
+    margin-top: -60px;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s;
+    transform: scale(0.8);
+}
+
+.perfil-terceira-linha{
+    float: left;
+    width: 100%;
+    margin-top: -60px;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s;
+    transform: scale(0.8);
+}
+
+.perfil-adriano:hover{
+    background-image:url('icon_antigo/adriano-ramos-red.png') !important;
+    transition: 0s;
+}
+
+.perfil-davi:hover{
+    background-image:url('icon_antigo/davi-rabinovich-red.png') !important;
+    transition: 0s;
+}
+
+.perfil-jaime:hover{
+    background-image:url('icon_antigo/jaime-palilo-red.png') !important;
+    transition: 0s;
+}
+
+.perfil-jorge:hover{
+    background-image:url('icon_antigo/jorge-cavalieri-red.png') !important;
+    transition: 0s;
+}
+
+.perfil-mario:hover{
+    background-image:url('icon_antigo/mario-ayala-red.png') !important;
+    transition: 0s;
+}
+
+.perfil-paulo:hover{
+    background-image:url('icon_antigo/paulo-guerra-red.png') !important;
+    transition: 0s;
+}
+
+#EsperaCargando{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
