@@ -124,3 +124,17 @@ body{
     left: 0;
     opacity: 0;
 }
+
+@media (max-width: 800px){
+  .body-inner-div{
+        margin-left: -20px;
+   }
+
+   #logo{
+        max-width: 500px;
+   }
+
+   .perfil-primeira-linha{
+        margin-top: 240px;
+   }
+}
