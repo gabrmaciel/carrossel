@@ -1,6 +1,7 @@
 *{
     margin: 0;
-    padding: 0
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html, body{
@@ -17,6 +18,7 @@ html, body{
     margin: auto;
     text-align: left;
     padding: 0px 20px;
+    position: relative;
 }
 
 body{
@@ -64,6 +66,9 @@ body{
     opacity: 0;
     transition: 0.5s;
     transform: scale(0.8);
+    position: relative;
+    z-index:2;
+    left: 0
 }
 
 .perfil-segunda-linha{
@@ -75,6 +80,9 @@ body{
     opacity: 0;
     transition: 0.5s;
     transform: scale(0.8);
+    position: relative;
+    z-index:2;
+    left: 0
 }
 
 .perfil-terceira-linha{
@@ -86,7 +94,40 @@ body{
     opacity: 0;
     transition: 0.5s;
     transform: scale(0.8);
+    position: relative;
+    z-index:2;
+    left: 0
 }
+
+.lousa{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    margin-top: 260px;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.lousa-lousa{
+    width: 60%;
+    height: 60vh;
+    background-image: url('img/lousa-img.png');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 30px
+}
+
+.lousa-nome{
+    padding: 30px
+}
+
+.lousa-nome-img{
+    height: 20vh;
+}
+
 
 .perfil-adriano:hover{
     background-image:url('icon_antigo/adriano-ramos-red.png') !important;
@@ -115,6 +156,56 @@ body{
 
 .perfil-paulo:hover{
     background-image:url('icon_antigo/paulo-guerra-red.png') !important;
+    transition: 0s;
+}
+
+.perfil-alicia:hover{
+    background-image:url('icon_antigo/alicia-gusman-red.png') !important;
+    transition: 0s;
+}
+
+.perfil-cirilo:hover{
+    background-image:url('icon_antigo/cirilo-rivera-red.png') !important;
+    transition: 0s;
+}
+
+.perfil-maria:hover{
+    background-image:url('icon_antigo/maria-joaquina-red.png') !important;
+    transition: 0s;
+}
+
+.perfil-daniel:hover{
+    background-image:url('icon_antigo/daniel-zapata-red.png') !important;
+    transition: 0s;
+}
+
+.perfil-kokimoto:hover{
+    background-image:url('icon_antigo/kokimoto-mishima-red.png') !important;
+    transition: 0s;
+}
+
+.perfil-bibi:hover{
+    background-image:url('icon_antigo/bibi-smith-red.png') !important;
+    transition: 0s;
+}
+
+.perfil-carmen:hover{
+    background-image:url('icon_antigo/carmen-carrilho-red.png') !important;
+    transition: 0s;
+}
+
+.perfil-laura:hover{
+    background-image:url('icon_antigo/laura-gianolli-red.png') !important;
+    transition: 0s;
+}
+
+.perfil-marcelina:hover{
+    background-image:url('icon_antigo/marcelina-guerra-red.png') !important;
+    transition: 0s;
+}
+
+.perfil-valeria:hover{
+    background-image:url('icon_antigo/valeria-ferreira-red.png') !important;
     transition: 0s;
 }
 

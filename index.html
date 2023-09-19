@@ -11,27 +11,34 @@
     <img id="logo" src="img/carrossel-completo.png" alt="">
     <div id="perfil">
         <div class="body-inner-div">
+            <div class="lousa">
+                <div class="lousa-lousa">
+                    <div class="lousa-nome">
+                        <img src="icon_antigo/adriano-ramos.png" id="lousa-nome-img" class="lousa-nome-img">
+                    </div>
+                </div>
+            </div>
             <div class="perfil-primeira-linha">
-                <div class="perfil-rosto perfil-rosto-primeiro perfil-adriano" style="background-image:url('icon_antigo/adriano-ramos.png')"></div>
-                <div class="perfil-rosto perfil-rosto-primeiro perfil-davi" style="background-image:url('icon_antigo/davi-rabinovich.png')"></div>
-                <div class="perfil-rosto perfil-rosto-primeiro perfil-jaime" style="background-image:url('icon_antigo/jaime-palilo.png')"></div>
-                <div class="perfil-rosto perfil-rosto-primeiro perfil-jorge" style="background-image:url('icon_antigo/jorge-cavalieri.png')"></div>
-                <div class="perfil-rosto perfil-rosto-primeiro perfil-mario" style="background-image:url('icon_antigo/mario-ayala.png')"></div>
-                <div class="perfil-rosto perfil-rosto-primeiro perfil-paulo" style="background-image:url('icon_antigo/paulo-guerra.png')"></div>
+                <div class="perfil-rosto perfil-rosto-primeiro perfil-adriano" style="background-image:url('icon_antigo/adriano-ramos.png')" onclick="PerfilPersonagem(0)"></div>
+                <div class="perfil-rosto perfil-rosto-primeiro perfil-davi" style="background-image:url('icon_antigo/davi-rabinovich.png')" onclick="PerfilPersonagem(1)"></div>
+                <div class="perfil-rosto perfil-rosto-primeiro perfil-jaime" style="background-image:url('icon_antigo/jaime-palilo.png')" onclick="PerfilPersonagem(2)"></div>
+                <div class="perfil-rosto perfil-rosto-primeiro perfil-jorge" style="background-image:url('icon_antigo/jorge-cavalieri.png')" onclick="PerfilPersonagem(3)"></div>
+                <div class="perfil-rosto perfil-rosto-primeiro perfil-mario" style="background-image:url('icon_antigo/mario-ayala.png')" onclick="PerfilPersonagem(4)"></div>
+                <div class="perfil-rosto perfil-rosto-primeiro perfil-paulo" style="background-image:url('icon_antigo/paulo-guerra.png')" onclick="PerfilPersonagem(5)"></div>
             </div>
             <div class="perfil-segunda-linha">
-                <div class="perfil-rosto perfil-rosto-segundo perfil-alicia" style="background-image:url('icon_antigo/alicia-gusman.png')"></div>
-                <div class="perfil-rosto perfil-rosto-segundo perfil-cirilo" style="background-image:url('icon_antigo/cirilo-rivera.png')"></div>
-                <div class="perfil-rosto perfil-rosto-segundo perfil-maria" style="background-image:url('icon_antigo/maria-joaquina.png')"></div>
-                <div class="perfil-rosto perfil-rosto-segundo perfil-daniel" style="background-image:url('icon_antigo/daniel-zapata.png')"></div>
-                <div class="perfil-rosto perfil-rosto-segundo perfil-kokimoto" style="background-image:url('icon_antigo/kokimoto-mishima.png')"></div>
+                <div class="perfil-rosto perfil-rosto-segundo perfil-alicia" style="background-image:url('icon_antigo/alicia-gusman.png')" onclick="PerfilPersonagem(6)"></div>
+                <div class="perfil-rosto perfil-rosto-segundo perfil-cirilo" style="background-image:url('icon_antigo/cirilo-rivera.png')" onclick="PerfilPersonagem(7)"></div>
+                <div class="perfil-rosto perfil-rosto-segundo perfil-maria" style="background-image:url('icon_antigo/maria-joaquina.png')" onclick="PerfilPersonagem(8)"></div>
+                <div class="perfil-rosto perfil-rosto-segundo perfil-daniel" style="background-image:url('icon_antigo/daniel-zapata.png')" onclick="PerfilPersonagem(9)"></div>
+                <div class="perfil-rosto perfil-rosto-segundo perfil-kokimoto" style="background-image:url('icon_antigo/kokimoto-mishima.png')" onclick="PerfilPersonagem(10)"></div>
             </div>
             <div class="perfil-terceira-linha">
-                <div class="perfil-rosto perfil-rosto-terceiro perfil-alicia" style="background-image:url('icon_antigo/bibi-smith.png')"></div>
-                <div class="perfil-rosto perfil-rosto-terceiro perfil-cirilo" style="background-image:url('icon_antigo/carmen-carrilho.png')"></div>
-                <div class="perfil-rosto perfil-rosto-terceiro perfil-maria" style="background-image:url('icon_antigo/laura-gianolli.png')"></div>
-                <div class="perfil-rosto perfil-rosto-terceiro perfil-daniel" style="background-image:url('icon_antigo/marcelina-guerra.png')"></div>
-                <div class="perfil-rosto perfil-rosto-terceiro perfil-kokimoto" style="background-image:url('icon_antigo/valeria-ferreira.png')"></div>
+                <div class="perfil-rosto perfil-rosto-terceiro perfil-bibi" style="background-image:url('icon_antigo/bibi-smith.png')" onclick="PerfilPersonagem(11)"></div>
+                <div class="perfil-rosto perfil-rosto-terceiro perfil-carmen" style="background-image:url('icon_antigo/carmen-carrilho.png')" onclick="PerfilPersonagem(12)"></div>
+                <div class="perfil-rosto perfil-rosto-terceiro perfil-laura" style="background-image:url('icon_antigo/laura-gianolli.png')" onclick="PerfilPersonagem(13)"></div>
+                <div class="perfil-rosto perfil-rosto-terceiro perfil-marcelina" style="background-image:url('icon_antigo/marcelina-guerra.png')" onclick="PerfilPersonagem(14)"></div>
+                <div class="perfil-rosto perfil-rosto-terceiro perfil-valeria" style="background-image:url('icon_antigo/valeria-ferreira.png')" onclick="PerfilPersonagem(15)"></div>
             </div>
         </div>
     </div>
@@ -90,19 +97,40 @@
             function perfilTerceiraLinhaTransitionZero(){
                 $(".perfil-rosto-terceiro").css("transition", "0s")
             }
-
-            // $(".perfil-rosto").hover(function(){
-
-            //     var perfil_rosto = $(this).css('background-image');
-            //     perfil_rosto = perfil_rosto.split("/");
-            //     perfil_rosto = perfil_rosto.slice(-1)[0];
-            //     perfil_rosto = perfil_rosto.slice(0,-2);
-            //     perfil_rosto = perfil_rosto.split(".");
-            //     $(this).css('background-image', 'url(icon_antigo/'+perfil_rosto[0]+'-red.'+perfil_rosto[1]+')');
-            //     }, function(){
-            //     $(this).css('background-image', 'url(icon_antigo/'+perfil_rosto[0]+'.'+perfil_rosto[1]+')');
-            // });
         });
+
+        function PerfilPersonagem(numero){
+
+            var personagem = [
+                ["Adriano Ramos", "12 anos", "Adriano tem uma meia-mascote chamada Chulé e muita imaginação. Gosta de passar o tempo dentro de seu quarto brincando com sua meia e jogando videogame."], 
+                ["Davi Rabinovich", "9 anos", "Davi é religioso, segue o judaísmo e usa quipá (assim como seu pai). Gosta da Valéria e a Valéria também gosta dele. Ele não gosta de se intrometer em brigas."],
+                ["Jaime Palilo", "12 anos", "Jaime é muito bondoso e comilão, porém nem sempre na mesma ordem. Quando fica com raiva tenta se controlar, mas ás vezes o controle falha. Seu pai trabalha numa oficina e tem um assistente muito atrapalhado chamado Jurandir. Tem dificuldade com os estudos e a disciplina."],
+                ["Jorge Cavalieri", "10 anos", "Jorge é muito orgulhoso, porque sei pai é bastante rico. Seu pai não concorda com o jeito soberbo do filho, mas sua mãe apoia. Ele também gosta de uma fofoca."],
+                ["Mário Ayala", "12 anos", "Mário adora fazer travessuras com o Paulo. Sente muita falta de sua mãe, e tem uma madrasta que briga muito. Tem uma irmã mais nova chamada Diana."],
+                ["Paulo Guerra", "11 anos", "Paulo adora travessuras e cria vários atritos com personagens da turma. Ele tem uma irmã chamada Marcelina Guerra, que estuda com ele e eventualmente cai em suas armadilhas. Quando alguém faz algo que ele não gosta, tenta fazer vinganças. Seu melhor amigo da sala é o Kokimoto."],
+                ["Alicia Gusman", "11 anos", "Alicia usa um boné. Gosta de andar de skate e jogar bola. Gosta de aventuras e ajudar os amigos. Não gosta muito de rosa."],
+                ["Cirilo Rivera", "10 anos", "Cirilo gosta da Maria Joaquina, mas a Maria Joaquina não liga para ele de volta. É muito ingênuo, ele acredita em tudo o que os outros falam. É bondoso, e é muito amigo da Professora Helena. Ele não vem de uma família muito rica, porque seu pai é carpinteiro e a mãe, costureira."],
+                ["Maria Joaquina Medsen", "12 anos", "Maria Joaquina é muito rica e exibida. Seu pai é médico e tem muito dinheiro. Não gosta de conversar com seus colegas de classe, principalmente o Cirilo. Gosta de se arrumar bastante antes de ir para a escola. Ás vezes é um pouco teimosa."],
+                ["Daniel Zapata", "13 anos", "Daniel é muito estudioso. Fundou o grupo Patrulha Salvadora. Gosta de ajudar os outros e jogar futebol com seus amigos."],
+                ["Kokimoto Mishima", "9 anos", "Kokimoto tem origem nipônica e gosta de exibir isso. Gosta também de artes maciais, como judô e karatê. Anda junto com Paulo para fazer suas travssesuras. Tem uma risada esquisita."],
+                ["Bibi Smith", "9 anos", "Bibi é estadounidense, amiga da Maria Joaquina. Gosta de fazer cupcakes e comida estadounidense."],
+                ["Carmen Carrilho", "9 anos", "A Carmen não tinha condições financeiras. Tem um irmãozinho chamado Dudu. Ela é muito carinhosa e seus pais são separados."],
+                ["Laura Gianolli", "8 anos", "Laura gosta de comer doces e contos românticas. Quando fica romântica, diz 'isso é tão romântico' e 'isso é tão sentimental'. Ela é apaixonada pelo Mario Ayala. Sua cor favorita é rosa, que é uma cor 'tão romântica'."],
+                ["Laura Gianolli", "8 anos", "Laura gosta de comer doces e contos românticas. Quando fica romântica, diz 'isso é tão romântico' e 'isso é tão sentimental'. Ela é apaixonada pelo Mario Ayala. Sua cor favorita é rosa, que é uma cor 'tão romântica'."],
+            ];
+
+            var nome = personagem[numero][0];
+            var idade = personagem[numero][1];
+            var texto = personagem[numero][2];
+
+            //alert(nome + " " + idade + " " + texto);
+
+            $(".perfil-primeira-linha").css({'left' : '-40px','opacity' : '0'});
+            $(".perfil-segunda-linha").css({'left' : '+40px','opacity' : '0'});
+            $(".perfil-terceira-linha").css({'left' : '-40px','opacity' : '0'});
+            $(".lousa").css({"opacity":"1", "z-index":"3"});
+            $("#logo").css({'transform' : 'scale(0.5)','top' : '-24%'})
+        }
     </script>
 </body>
 </html>
